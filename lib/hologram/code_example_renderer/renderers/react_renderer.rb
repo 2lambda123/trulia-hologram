@@ -1,8 +1,8 @@
-require 'securerandom'
+require "securerandom"
 
-Hologram::CodeExampleRenderer::Factory.define 'react' do
-  example_template 'markup_example_template'
-  table_template 'markup_table_template'
+Hologram::CodeExampleRenderer::Factory.define "react" do
+  example_template "markup_example_template"
+  table_template "markup_table_template"
 
   lexer { Rouge::Lexer.find(:html) }
 
